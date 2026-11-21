@@ -1,7 +1,7 @@
-# 🕷️ SpiderKiki
+# 🕷️ Wifi-araña
 ### Robot araña cuadrúpedo controlado por WiFi, ESP32-C3 y servomotores
 
-SpiderKiki es un robot cuadrúpedo de cuatro patas desarrollado con un ESP32-C3, un controlador de servomotores PCA9685 y una interfaz web de control remoto.
+Wifi-araña es un robot cuadrúpedo de cuatro patas desarrollado con un ESP32-C3, un controlador de servomotores PCA9685 y una interfaz web de control remoto.
 
 El proyecto permite controlar la locomoción del robot, ejecutar movimientos y animaciones preprogramadas, manipular individualmente sus articulaciones y visualizar una transmisión de video en tiempo real mediante una ESP32-CAM.
 
@@ -67,7 +67,7 @@ Dirección de transmisión:
 
 ## 🦿 Sistema de locomoción
 
-SpiderKiki utiliza cuatro patas, cada una con dos articulaciones controladas por servomotores:
+Wifi-araña utiliza cuatro patas, cada una con dos articulaciones controladas por servomotores:
 
 - Una articulación horizontal para desplazar la pata.
 - Una articulación vertical para levantarla y apoyarla.
@@ -172,7 +172,7 @@ Cada servomotor se conecta respetando las tres conexiones de su módulo:
 
 ## 📡 Control mediante WiFi
 
-SpiderKiki crea una red inalámbrica propia, por lo que no necesita conectarse a un router ni disponer de acceso a Internet.
+Wifi-araña crea una red inalámbrica propia, por lo que no necesita conectarse a un router ni disponer de acceso a Internet.
 
 ### Configuración predeterminada
 
@@ -427,7 +427,7 @@ Los valores de calibración de los servomotores pueden variar según el modelo y
 
 ## 🚀 Posibles ampliaciones
 
-SpiderKiki está diseñado para poder incorporar nuevas funcionalidades.
+Wifi-araña está diseñado para poder incorporar nuevas funcionalidades.
 
 Algunas mejoras posibles:
 
@@ -443,7 +443,7 @@ Algunas mejoras posibles:
 ## 📁 Estructura sugerida del repositorio
 
 ```text
-SpiderKiki/
+Wifi-araña/
 │
 ├── README.md
 │
