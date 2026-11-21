@@ -195,18 +195,18 @@ Cada servomotor se conecta respetando las tres conexiones de su módulo:
 
 A continuación, se muestra el proceso de construcción y ensamblaje de WiFi Araña, desde sus primeras etapas hasta el resultado final.
 
-![Construcción - Foto 1](assets/construccion/1.jpg)
-![Construcción - Foto 2](assets/construccion/2.jpg)
-![Construcción - Foto 3](assets/construccion/3.jpg)
-![Construcción - Foto 4](assets/construccion/4.jpg)
-![Construcción - Foto 5](assets/construccion/5.jpg)
-![Construcción - Foto 6](assets/construccion/6.jpg)
+![Construcción - Foto 1](assets/construccion/1.jpeg)
+![Construcción - Foto 2](assets/construccion/2.jpeg)
+![Construcción - Foto 3](assets/construccion/3.jpeg)
+![Construcción - Foto 4](assets/construccion/4.jpeg)
+![Construcción - Foto 5](assets/construccion/5.jpeg)
+![Construcción - Foto 6](assets/construccion/6.jpeg)
 
 ![Construcción - GIF 1](assets/construccion/1.gif)
 
-![Construcción - Foto 7](assets/construccion/7.jpg)
-![Construcción - Foto 8](assets/construccion/8.jpg)
-![Construcción - Foto 9](assets/construccion/9.jpg)
+![Construcción - Foto 7](assets/construccion/7.jpeg)
+![Construcción - Foto 8](assets/construccion/8.jpeg)
+![Construcción - Foto 9](assets/construccion/9.jpeg)
 
 ![Construcción - GIF 2](assets/construccion/2.gif)
 ![Construcción - GIF 3](assets/construccion/3.gif)
