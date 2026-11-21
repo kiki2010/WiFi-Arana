@@ -1,11 +1,32 @@
-# 🕷️ Wifi-araña
+# 🕷️ WiFi Araña
+
 ### Robot araña cuadrúpedo controlado por WiFi, ESP32-C3 y servomotores
 
-Wifi-araña es un robot cuadrúpedo de cuatro patas desarrollado con un ESP32-C3, un controlador de servomotores PCA9685 y una interfaz web de control remoto.
+WiFi Araña es un robot cuadrúpedo de cuatro patas desarrollado con un ESP32-C3, un controlador de servomotores PCA9685 y una interfaz web de control remoto.
 
 El proyecto permite controlar la locomoción del robot, ejecutar movimientos y animaciones preprogramadas, manipular individualmente sus articulaciones y visualizar una transmisión de video en tiempo real mediante una ESP32-CAM.
 
 El objetivo es desarrollar una plataforma robótica modular, accesible y ampliable, combinando electrónica, programación, mecánica y comunicación inalámbrica.
+
+---
+
+## 📑 Índice
+
+- [✨ Características principales](#-características-principales)
+- [🧠 Arquitectura del sistema](#-arquitectura-del-sistema)
+- [🦿 Sistema de locomoción](#-sistema-de-locomoción)
+- [🔌 Conexiones electrónicas](#-conexiones-electrónicas)
+- [🔧 Proceso de construcción](#-proceso-de-construcción)
+- [📡 Control mediante WiFi](#-control-mediante-wifi)
+- [🕹️ Interfaz de control](#️-interfaz-de-control)
+- [💻 Software y funcionamiento](#-software-y-funcionamiento)
+- [⌨️ Comandos del Monitor Serie](#-comandos-del-monitor-serie)
+- [🛠️ Instalación y puesta en marcha](#️-instalación-y-puesta-en-marcha)
+- [⚙️ Parámetros configurables](#️-parámetros-configurables)
+- [🔧 Solución de problemas](#-solución-de-problemas)
+- [🚀 Posibles ampliaciones](#-posibles-ampliaciones)
+- [📁 Estructura del repositorio](#-estructura-del-repositorio)
+- [👩‍💻 Proyecto](#-proyecto)
 
 ---
 
@@ -20,6 +41,8 @@ El objetivo es desarrollar una plataforma robótica modular, accesible y ampliab
 - **Transmisión de video:** visualización mediante una ESP32-CAM independiente.
 - **Monitor serie:** permite enviar comandos directamente desde el ordenador.
 - **Cancelación de movimientos:** posibilidad de interrumpir las animaciones desde la interfaz web.
+
+---
 
 ## 🧠 Arquitectura del sistema
 
@@ -67,7 +90,7 @@ Dirección de transmisión:
 
 ## 🦿 Sistema de locomoción
 
-Wifi-araña utiliza cuatro patas, cada una con dos articulaciones controladas por servomotores:
+WiFi Araña utiliza cuatro patas, cada una con dos articulaciones controladas por servomotores:
 
 - Una articulación horizontal para desplazar la pata.
 - Una articulación vertical para levantarla y apoyarla.
@@ -84,15 +107,15 @@ Wifi-araña utiliza cuatro patas, cada una con dos articulaciones controladas po
 ### Distribución física
 
 ```text
-                  FRENTE
+                 FRENTE
 
-          PATA 2          PATA 3
-          S2 + S6         S3 + S7
+         PATA 2          PATA 3
+         S2 + S6         S3 + S7
 
-          PATA 0          PATA 1
-          S0 + S4         S1 + S5
+         PATA 0          PATA 1
+         S0 + S4         S1 + S5
 
-                  ATRÁS
+                 ATRÁS
 ```
 
 ### Grupos de movimiento
@@ -132,7 +155,7 @@ La corrección se aplica centralizadamente en `setServoAngleInstant()`, permitie
 
 ## 🔌 Conexiones electrónicas
 
-![Diagrama](assets/diagrama.png)
+![Diagrama electrónico](assets/diagrama.png)
 
 ### ESP32-C3 → PCA9685
 
@@ -166,13 +189,35 @@ Cada servomotor se conecta respetando las tres conexiones de su módulo:
 - V+: alimentación externa.
 - PWM: señal de control.
 
-### Diagrama electrónico
+---
 
-![Diagrama](assets/diagrama.png)
+## 🔧 Proceso de construcción
+
+A continuación, se muestra el proceso de construcción y ensamblaje de WiFi Araña, desde sus primeras etapas hasta el resultado final.
+
+![Construcción - Foto 1](assets/construccion/1.jpg)
+![Construcción - Foto 2](assets/construccion/2.jpg)
+![Construcción - Foto 3](assets/construccion/3.jpg)
+![Construcción - Foto 4](assets/construccion/4.jpg)
+![Construcción - Foto 5](assets/construccion/5.jpg)
+![Construcción - Foto 6](assets/construccion/6.jpg)
+
+![Construcción - GIF 1](assets/construccion/1.gif)
+
+![Construcción - Foto 7](assets/construccion/7.jpg)
+![Construcción - Foto 8](assets/construccion/8.jpg)
+![Construcción - Foto 9](assets/construccion/9.jpg)
+
+![Construcción - GIF 2](assets/construccion/2.gif)
+![Construcción - GIF 3](assets/construccion/3.gif)
+![Construcción - GIF 4](assets/construccion/4.gif)
+![Construcción - GIF 5](assets/construccion/5.gif)
+
+---
 
 ## 📡 Control mediante WiFi
 
-Wifi-araña crea una red inalámbrica propia, por lo que no necesita conectarse a un router ni disponer de acceso a Internet.
+WiFi Araña crea una red inalámbrica propia, por lo que no necesita conectarse a un router ni disponer de acceso a Internet.
 
 ### Configuración predeterminada
 
@@ -193,7 +238,7 @@ Wifi-araña crea una red inalámbrica propia, por lo que no necesita conectarse 
 4. Abrir un navegador.
 5. Ingresar a `http://192.168.4.1`.
 
-Se abrirá el panel de control de SpiderKiki.
+Se abrirá el panel de control de WiFi Araña.
 
 **Nota:** la red está abierta en esta configuración. Para un uso más seguro, se recomienda configurar una contraseña WiFi.
 
@@ -427,7 +472,7 @@ Los valores de calibración de los servomotores pueden variar según el modelo y
 
 ## 🚀 Posibles ampliaciones
 
-Wifi-araña está diseñado para poder incorporar nuevas funcionalidades.
+WiFi Araña está diseñado para poder incorporar nuevas funcionalidades.
 
 Algunas mejoras posibles:
 
@@ -440,7 +485,7 @@ Algunas mejoras posibles:
 
 ---
 
-## 📁 Estructura sugerida del repositorio
+## 📁 Estructura del repositorio
 
 ```text
 Wifi-araña/
@@ -451,10 +496,24 @@ Wifi-araña/
 │   ├── spiderkiki.ino
 │   └── camara_spiderkiki.ino
 │
-├── diagrams/
-│   └── diagrama.png
-│
-├── asseets/
+├── assets/
+│   ├── diagrama.png
+│   │
+│   └── construccion/
+│       ├── 1.jpg
+│       ├── 2.jpg
+│       ├── 3.jpg
+│       ├── 4.jpg
+│       ├── 5.jpg
+│       ├── 6.jpg
+│       ├── 7.jpg
+│       ├── 8.jpg
+│       ├── 9.jpg
+│       ├── 1.gif
+│       ├── 2.gif
+│       ├── 3.gif
+│       ├── 4.gif
+│       └── 5.gif
 │
 └── LICENSE
 ```
@@ -463,6 +522,6 @@ Wifi-araña/
 
 ## 👩‍💻 Proyecto
 
-**SpiderKiki** es un proyecto de robótica que integra programación, electrónica, diseño mecánico y sistemas embebidos.
+**WiFi Araña** es un proyecto de robótica que integra programación, electrónica, diseño mecánico y sistemas embebidos.
 
-Desarrollado por KIKI.
+Desarrollado por **KIKI**.
